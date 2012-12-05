@@ -1,4 +1,4 @@
 eRegister
 =========
 
-an electronic register system used as a case study in Web Archs.
+This project is an electronic register system used as a case study in Web Architecures.

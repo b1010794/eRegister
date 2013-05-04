@@ -1,10 +1,17 @@
 package uk.ac.shu.webarch.eregister
 
-class RegClass {
+ class RegClass {
+ 
+  
+   String name
 
-       Instructor instructor;
+ 
+   Instructor classInstructor
+ 
+  static constraints = {
+  }
 
-
-    static constraints = {
-    }
-}
+  static mapping = {
+    classInstructor column:'instructor_fk'
+  }
+ }

@@ -4,6 +4,7 @@ class Enrollment {
 
   Student student
   Course course
+  RegClass regclass
 
   static constraints = {
   }

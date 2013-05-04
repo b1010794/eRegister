@@ -6,9 +6,16 @@ class Course {
   String courseCode
   String description
 
+  Set classes
+
+  
   static constraints = {
     courseCode maxSize: 20
   }
+
+
+    static hasMany = [classes: RegClass]
+    static mappedBy = [classes: 'course']
 
   
   static mapping = {

@@ -8,10 +8,23 @@ package uk.ac.shu.webarch.eregister
  
    Instructor classInstructor
  
-  static constraints = {
-  }
+  
+  Course course
 
-  static mapping = {
-    classInstructor column:'instructor_fk'
+  
+  Set enrolledStudents
+
+  
+
+  static hasMany = [enrolledStudents: Enrollment]
+
+  static mappedBy = [enrolledStudents: 'regclass']
+
+   static constraints = {
+   }
+ 
+   static mapping = {
+     classInstructor column:'instructor_fk'
+    course column:'course_fk'
   }
  }

@@ -9,11 +9,13 @@ class RegistrationSheet {
   Date sheetDate
 
   Set signatories
+  static hasMany = [signatories: RegisterEntry]
+  static mappedBy = [signatories: 'regSheet']
+  
 
-  String notes
+String notes
 
-  static hasMany = [classes: RegisterEntry]
-  static mappedBy = [classes: 'regSheet']
+  
 
   static constraints = {
     course(nullable:false, blank:false);

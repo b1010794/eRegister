@@ -5,19 +5,16 @@ class BootStrap {
     def init = { servletContext ->
       
     println("BootStrap::init");
-    def ed_instructor = Instructor.findByStaffId("777777e");
+    def ed_instructor = Instructor.findByStaffId("777777e") ?: new Instructor(staffId:"777777e",instructorName:"Ed Gunn").save();
+    def steve_instructor = Instructor.findByStaffId("124354e") ?: new Instructor(staffId:"124354e",instructorName:"Steve Jones").save();
 
-  if(ed_instructor == null){
-    println("Instructor not found, create..");
-    ed_instructor = new Instructor();
-    ed_instructor.staffId = "777777e";
-    ed_instructor.instructorName = "Ed Gunn";
-    ed_instructor.save();
-    }
+    def web_arch_course = Course.findByCourseCode("171717w") ?: new Course(courseCode:"171717w",
+                                                                           courseName:"Web Architectures",
+                                                                           description:"Web Architectures course").save();
 
-    else{
-    println("Result of find by staffId for ed: ${ed_instructor}");
-    }
+    def monday_class = RegClass.findByName("WebArch-Mondays") ?: new RegClass(name:"WebArch-Mondays",classInstructor:ed_instructor, course:web_arch_course).save();
+
+
   }
     def destroy = {
     }

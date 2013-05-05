@@ -7,5 +7,8 @@
 	</head>
 	<body>
          <p>This is the register</p>
-	</body>
+         <g:link controller="Instructor">Manage Instructors</g:link><br>
+	 <g:link controller="Course">Manage Courses</g:link>
+
+        </body>
 </html>

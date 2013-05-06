@@ -5,6 +5,9 @@ package uk.ac.shu.webarch.eregister
   
    String name
 
+   //code used to enable cool URLS
+   String classCode
+
  
    Instructor classInstructor
  
@@ -14,11 +17,13 @@ package uk.ac.shu.webarch.eregister
   
   Set enrolledStudents
 
+  Set registrationSheets
+
   
 
-  static hasMany = [enrolledStudents: Enrollment]
+  static hasMany = [enrolledStudents: Enrollment, registrationSheets: RegistrationSheet]
 
-  static mappedBy = [enrolledStudents: 'regclass']
+  static mappedBy = [enrolledStudents: 'regclass', registrationSheets:'regClass']
 
    static constraints = {
    }

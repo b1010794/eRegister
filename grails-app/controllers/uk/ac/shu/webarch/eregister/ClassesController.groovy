@@ -62,6 +62,7 @@ class ClassesController {
                                               course:params.courseCode,
                                               sheetDate:new Date()).save();
         redirect(mapping:'signInSheet', params:[courseCode:params.courseCode,classCode:params.classCode,sheetCode:params.shortcode])
+
         break;
       case 'GET':
         println("Create new sheet");
@@ -116,7 +117,7 @@ class ClassesController {
       case 'GET': println("Create new sheet");
        
         break;
-    }
+    } 
 
     result
   }

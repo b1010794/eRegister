@@ -6,15 +6,22 @@
 		
 	</head>
 	<body>
+
+                <div class="nav" role="navigation">
+			<ul>
+				 <li> <g:link mapping="classes">>Classes</g:link></li>
+							
+			</ul>
+		</div>
       <h1>${course.courseName}</h1>
-    <p>${course.description}</p>
+    <h4>${course.description}</h4>
     <hr/>
-    Classes for this course: 
+    <h1>Classes for this course: </h1>
     <table>
       <tr>
-        <td>Class Name</td>
-        <td>Short Code</td>
-        <td>Instructor</td>
+        <th>Class Name</th>
+        <th>Short Code</th>
+        <th>Instructor</th>
       </tr>
 
       <g:each in="${course.classes}" var="cls">

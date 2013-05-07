@@ -21,9 +21,11 @@ package uk.ac.shu.webarch.eregister
 
   
 
-  static hasMany = [enrolledStudents: Enrollment, registrationSheets: RegistrationSheet]
+  static hasMany = [enrolledStudents: Enrollment,  
+                    registrationSheets: RegistrationSheet]
 
-  static mappedBy = [enrolledStudents: 'regclass', registrationSheets:'regClass']
+  static mappedBy = [enrolledStudents: 'regClass', 
+                     registrationSheets:'regClass']
 
    static constraints = {
    }

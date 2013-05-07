@@ -37,20 +37,16 @@ class BootStrap {
                   new Student(studentNumber:'a123', studentFullName:'Jim Jones', notes:'aka Jimbob').save();
 
   
-   //declaring reg sheets 
-   def testsheet = RegistrationSheet.findByShortcode("777") ?:
-                            new RegistrationSheet(regClass: monday_class,
-                                                  shortcode: "777",
-                                                  sheetDate:new Date(),
-                                                  course: web_arch_course).save();
+   
+
+println("Find or create by...")
+
+ //Enrolling students on classes 
+  def student_a_web_arch = Enrollment.findOrCreateByStudentAndRegClass(student_1,monday_class).save();
+   
 
 
-
- //Enrolling students on classes
- //  def student_1_web_arch = Enrollment.findByRegClassAndStudent(monday_class, student_1) ?: new Enrollment(student: student_1,
- //                                                                                                          regclass: monday_class,
- //                                                                                                          course: web_arch_course)
-  //                                                                                                         .save();
+   println("enrolled")
 
   }
     def destroy = {

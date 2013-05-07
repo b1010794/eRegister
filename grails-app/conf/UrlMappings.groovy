@@ -3,7 +3,7 @@ class UrlMappings {
 	static mappings = {
 
 
-                "/classes"(controller:'classes', action:'index')
+                name classes: "/classes"(controller:'classes', action:'index')
                 name courseHome: "/classes/$courseCode" (controller:'classes', action:'courseHome')
                 name classHome: "/classes/$courseCode/$classCode" (controller:'classes', action:'classHome')
                 name signInSheet: "/classes/$courseCode/$classCode/$sheetCode" (controller:'classes', action:'signInSheet')

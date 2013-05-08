@@ -6,7 +6,7 @@
 		
 	</head>
 	<body>
-
+                   <!--Nav Bar-->
                  <div class="nav" role="navigation">
 			<ul>
 				<li> </li>
@@ -15,7 +15,7 @@
 		</div>
 
          <h1>Classes - All classes are listed below</h1> <br>
-
+            <!--list of classes-->
 
             <table>
             <thead>

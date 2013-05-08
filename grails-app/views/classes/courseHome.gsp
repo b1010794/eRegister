@@ -6,6 +6,7 @@
 		
 	</head>
 	<body>
+              <!--Nav Bar-->
 
                 <div class="nav" role="navigation">
 			<ul>
@@ -13,6 +14,7 @@
 							
 			</ul>
 		</div>
+       <!--showing classes for course-->
       <h1>${course.courseName}</h1>
     <h4>${course.description}</h4>
     <hr/>

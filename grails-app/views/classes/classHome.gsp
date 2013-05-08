@@ -7,7 +7,9 @@
 	</head>
 	<body>
 
- <div class="nav" role="navigation">
+                <!--Nav Bar-->
+
+                <div class="nav" role="navigation">
 			<ul>
                         <li> <g:link mapping="classes">>Classes</g:link></li>
 
@@ -16,13 +18,15 @@
 
                                 <li> <g:link mapping="classHome"
                         params="${[courseCode:cls.course.courseCode, classCode:cls.classCode]}">>Class Home</g:link></li><br>
-			<br><hr/><br>	
+			<br><hr/><br>
+
+            <!--Class detials-->	
 				<li><p> Class Name : ${cls.name},
-    Course : ${cls.course.courseName},
-    Class code : ${cls.classCode},
-    Taught By : ${cls.classInstructor?.instructorName},
-    Number of sheets to date : ${sheetsSoFar}</p>
-     </li>
+                                        Course : ${cls.course.courseName},
+                                        Class code : ${cls.classCode},
+                                        Taught By : ${cls.classInstructor?.instructorName},
+                                        Number of sheets to date : ${sheetsSoFar}</p>
+                                 </li>
 							
 			</ul>
 		</div>
@@ -31,6 +35,8 @@
    
     <br>
     <br/>
+
+     <!--Sign in sheets-->
     <h1>Sign In Sheets Available</h1>
     <table>
       <tr><th>Code</th><th>Date</th><th>Attendance</th></tr>
@@ -64,6 +70,8 @@
       </g:each>    
     </table>
 <hr/>
+
+     <!--Form to make a new sheet-->
     <h1>  <g:form mapping="classHome" params="${[courseCode:cls.course.courseCode,classCode:cls.classCode]}" method="POST">
       New Sign In Sheet - Enter Shortcode: <input type="text" name="shortcode"/> 
       <input type="submit"/>

@@ -2,10 +2,13 @@ package uk.ac.shu.webarch.eregister
 
 class Instructor {
  
+   //name
    String instructorName
+
+   //staffId
    String staffId
  
-
+  //new set called classes
   Set classes
 
 

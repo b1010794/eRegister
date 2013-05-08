@@ -2,7 +2,11 @@ package uk.ac.shu.webarch.eregister
 
 class Enrollment {
 
+
+  //setting link to student
   Student student
+
+  //setting link to regclass
   RegClass regClass
 
   static constraints = {

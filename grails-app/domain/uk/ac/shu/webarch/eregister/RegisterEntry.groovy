@@ -2,10 +2,10 @@ package uk.ac.shu.webarch.eregister
 
 class RegisterEntry {
 
-  
+  //setting link to students 
   Student student
 
- 
+  //setting link to regsheet
   RegistrationSheet regSheet
 
 

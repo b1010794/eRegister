@@ -11,7 +11,7 @@ class ClassesController {
 
     def result=[:]
 
-    // fetch all classes
+    // get all classes
     result.classList = []
 
     RegClass.findAll().each {cls ->
@@ -29,7 +29,7 @@ class ClassesController {
      }
 }
 
-
+    //declaring courseHome actions
     def courseHome() {
     println("ClassesController::courseHome ${params}");
     def result = [:]
@@ -41,7 +41,9 @@ class ClassesController {
     result
   }
 
-  def classHome() {
+
+   //declaring classHome actions
+    def classHome() {
     
     def result = [:]
     result.cls = RegClass.findByClassCode( params.classCode)
@@ -73,8 +75,10 @@ class ClassesController {
  
     result
   }
+
+
  def generateStudentStats(class_info, possible) {
-    // Create a list containing each student and their attendance for this class
+    // Creating a list containing each student and their attendance for the class
     def result = []
     class_info.enrolledStudents.each { es ->
       def student_info = [:]
@@ -90,6 +94,8 @@ class ClassesController {
     return result;
   }
 
+
+  //declaring signInSheet actions
   def signInSheet() {
     def result = [:]
     result.sheet = RegistrationSheet.findByShortcode(params.sheetCode)

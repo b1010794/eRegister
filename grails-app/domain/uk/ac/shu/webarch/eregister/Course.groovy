@@ -1,11 +1,16 @@
 package uk.ac.shu.webarch.eregister
 
 class Course {
-  
+  //name  
   String courseName
+
+  //course code
   String courseCode
+
+  //description
   String description
 
+  // new set called classes
   Set classes
 
   

@@ -2,13 +2,20 @@ package uk.ac.shu.webarch.eregister
 
 class Student {
 
+
+   // name
    String studentFullName
+   
+   // student number
    String studentNumber
+
+   //notes
    String notes
 
+  //new set called courses
   Set courses
 
- 
+  //new set called classAtts 
   Set classAtts
 
   

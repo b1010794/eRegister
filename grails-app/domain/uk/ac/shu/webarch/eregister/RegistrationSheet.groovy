@@ -12,12 +12,14 @@ class RegistrationSheet {
   
   Date sheetDate
 
+
+  //new set called signatories
   Set signatories
   static hasMany = [signatories: RegisterEntry]
   static mappedBy = [signatories: 'regSheet']
   
-
-String notes
+   //notes
+   String notes
 
   
 

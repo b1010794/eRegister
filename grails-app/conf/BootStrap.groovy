@@ -33,16 +33,47 @@ class BootStrap {
                                                                               classCode:"WAD1", 
                                                                               course:web_app_course).save();
    //declaring students
-   def student_1 = Student.findByStudentNumber('a123') ?:
-                  new Student(studentNumber:'a123', studentFullName:'Jim Jones', notes:'aka Jimbob').save();
+   def student_1 = Student.findByStudentNumber('a232') ?:
+                  new Student(studentNumber:'a232', studentFullName:'Jack Lamb', notes:'Top student').save();
+
+   def student_2 = Student.findByStudentNumber('a777') ?:
+                  new Student(studentNumber:'a777', studentFullName:'Brian Gold', notes:'Poor attendance').save();
+
+
+   def student_3 = Student.findByStudentNumber('a999') ?:
+                  new Student(studentNumber:'a999', studentFullName:'Harry Bing', notes:'BING').save();
+
+
+   def student_4 = Student.findByStudentNumber('a000') ?:
+                  new Student(studentNumber:'a000', studentFullName:'Lewis Heart', notes:'n/a').save();
+
+
+   def student_5 = Student.findByStudentNumber('a007') ?:
+                  new Student(studentNumber:'a007', studentFullName:'Alad Hughes', notes:'n/a').save();
+
+   def student_6 = Student.findByStudentNumber('a565') ?:
+                  new Student(studentNumber:'a565', studentFullName:'Richard Cran', notes:'Slightly slow').save();
+
+
 
   
    
 
-println("Find or create by...")
+   println("Find or create ")
 
  //Enrolling students on classes 
-  def student_a_web_arch = Enrollment.findOrCreateByStudentAndRegClass(student_1,monday_class).save();
+   def student_1_web_arch = Enrollment.findOrCreateByStudentAndRegClass(student_1,monday_class).save();
+
+   def student_2_web_arch = Enrollment.findOrCreateByStudentAndRegClass(student_2,monday_class).save();
+
+   def student_3_web_arch = Enrollment.findOrCreateByStudentAndRegClass(student_3,monday_class).save();
+
+   def student_4_web_app = Enrollment.findOrCreateByStudentAndRegClass(student_4,webApp_class).save();
+
+   def student_5_web_app = Enrollment.findOrCreateByStudentAndRegClass(student_5,webApp_class).save();
+
+   def student_6_web_app = Enrollment.findOrCreateByStudentAndRegClass(student_6,webApp_class).save();
+
    
 
 

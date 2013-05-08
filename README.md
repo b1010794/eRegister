@@ -13,13 +13,13 @@ It's used to explore various aspects of web application including
 * RESTful web services
 
 
-## Checking out and Running the project
+## Cloning Running the project
 
 In order to get and run my project simply:
-*Open terminal
-*Type in "git clone https://github.com/b1010794/eRegister.git"
-*Then type "cd eRegister"
-*Finally type "grails runn-app" and navigate to the link that will appear in terminal
+* Open terminal
+* Type in "git clone https://github.com/b1010794/eRegister.git"
+* Then type "cd eRegister"
+* Finally type "grails runn-app" and navigate to the link that will appear in terminal
 
 ### What is needed to run this app? 
 
@@ -28,8 +28,8 @@ In order to get and run my project simply:
 * The project is a groovy/grails project and needs an installed Java7 JDK and installed grails SDK, preferably grails 2.1.3 (http://www.grails.org)
 
 
-## What I learned
+## What I have learned
 
-*The main thing I learned during this project was how to trouble shoot in grails and the importance of "println". Using "pritln" helped me to narrow down the possible location of errors in code numerous times and really helped to speed up the process of finding and fixig errors.
+* The main thing I learned during this project was how to trouble shoot in grails and the importance of "println". Using "pritln" helped me to narrow down the possible location of errors in code numerous times and really helped to speed up the process of finding and fixig errors.
 
 
